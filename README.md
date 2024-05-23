@@ -1,19 +1,21 @@
 # PythonExample
 
-This Program reads a text from a file and prints the language the file is written in and it's probability.
+This Program reads a text from a file and prints the language the file is written in and it's probability.  
+Added to that, it prints the amount of lines, sentences and words the file includes.
 
 ## Documentation
 
 Python Interpreter: 3.10 or higher  
 Required Packages:  
+
 - `pip`
 - `pipenv`
 - `langdetect`
 
-
 ## Functionality  
 
-Usage:
+### Usage
+
 - Windows/Linux:
     1. install `pipenv`:  
         - `pip install pipenv`
@@ -22,7 +24,7 @@ Usage:
     2. create a virtual environment:
         - `pipenv shell`
     3. run the `run.py`:
-        - `python run.py <filename>`   
+        - `python run.py <filename>`
         - Example: `python run.py test.txt`
 
 - MacOS:
@@ -32,10 +34,15 @@ Usage:
         - `pipenv install langdetect`
     2. create a virtual environment:
         - `pipenv shell`
-    3. run the `run.py`:
-        - `python3 run.py <filename>`   
+    3. run the `run.py` script:
+        - `python3 run.py <filename>`
         - Example: `python3 run.py test.txt`
 
-Expected result:
+### Expected result
+
 - Output in the terminal:  
-["language":"probability"]
+
+    ["language":"probability"]  
+    Number of lines: "…"  
+    Number of sentences: "…"  
+    Number of words: "…"
