@@ -41,12 +41,6 @@ jobs:
       uses: psf/black@stable
       continue-on-error: true
 
-    - name: Run linter and comment PR
-      uses: matias-martini/flake8-pr-comments-action@main
-      if: github.event_name == 'pull_request'
-      with:
-        github_token: ${{ github.token }}
-
   run-check:
     runs-on: ${{ matrix.os }}
     strategy:
