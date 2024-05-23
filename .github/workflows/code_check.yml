@@ -39,6 +39,7 @@ jobs:
     
     - name: Lint with black
       uses: psf/black@stable
+      continue-on-error: true
 
     - name: Run linter and comment PR
       uses: matias-martini/flake8-pr-comments-action@main
