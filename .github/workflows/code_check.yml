@@ -28,7 +28,7 @@ jobs:
         if [ -f Pipfile ]; then pipenv install; fi
         pipenv install flake8 pytest
     - name: Run code
-      run: pipenv run python run.py
+      run: pipenv run python run.py test.txt
     - name: Lint with flake8
       run: |
         # stop the build if there are Python syntax errors or undefined names
