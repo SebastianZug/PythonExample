@@ -18,21 +18,18 @@ def read_file(filename):
         print(f"Error: {e}")
     return text
 
-def count_lines(filename):
-    read_file(filename)
-    lines = text.splitlines()
+def count_lines(content):
+    lines = content.splitlines()
     num_lines = len(lines)
     return num_lines
 
-def count_sentences(filename):
-    read_file(filename)
-    sentences = re.findall(r'[.!?]', text)
+def count_sentences(content):
+    sentences = re.findall(r'[.!?]', content)
     num_sentences = len(sentences)
     return num_sentences
 
-def count_words(filename):
-    read_file(filename)
-    words = re.findall(r'\b\w+\b', text)
+def count_words(content):
+    words = re.findall(r'\b\w+\b', content)
     num_words = len(words)
     return num_words
         
@@ -41,9 +38,9 @@ if __name__ == "__main__":
         print("Usage: python run.py <filename>")
     else:
         text = read_file(sys.argv[1])
-        lines = count_lines(sys.argv[1])
-        sentences = count_sentences(sys.argv[1])
-        words = count_words(sys.argv[1])
+        lines = count_lines(text)
+        sentences = count_sentences(text)
+        words = count_words(text)
         print(detect_langs(text))
         print(f"Number of lines: {lines}")
         print(f"Number of sentences: {sentences}")
