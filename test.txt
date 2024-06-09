@@ -3,3 +3,5 @@ Die Organisation von Versionen in unterschiedlichen Branches ist ein zentrales E
 Der größte Nachteil bei der Arbeit mit nur einem Branch liegt darin, dass bei einem defekten Master(-Branch) die Arbeit sämtlicher Beteiligter unterbrochen wird. Branches schaffen einen eignen (temporären) Raum für die Entwicklung neuer Features, ohne die Stabilität des Gesamtsystems zu gefährden. Gleichzeitig haben die Entwickler den gesamten Verlauf eines Projekts in strukturierter Art zur Hand.
 
 Wie sieht das zum Beispiel für unsere Kursmaterialien aus?
+
+Bla bla
