@@ -34,6 +34,13 @@ Required Packages:
         - As poetry is managing the virtual environment, you can run the script using poetry:
         - `poetry run python3 run.py <filename>`
         - Example: `poetry run python3 run.py test.txt`
+    4. run tests:
+        - `poetry add pytest --dev` -- to add `pytest` as a development dependency (already in `pyproject.toml`)
+        - To run the tests, you can use the `pytest` command:
+        - `poetry run pytest`
+        - This command will run all the tests in the `tests` directory.
+        - Tests need to start with `test_` and be in the `tests` directory.
+        - You can also run a specific test file or test function by specifying the path to the test file or function name.
 
 ### Expected result
 
@@ -43,3 +50,22 @@ Required Packages:
     Number of lines: "…"  
     Number of sentences: "…"  
     Number of words: "…"
+
+### Notes
+
+- If you manage python projects with `poetry`, its better to use `poetry new <projectname>` to create a new project.
+- This will create a new directory with the name of the project and a basic structure for your project.
+- your project files should be put in the src/<projectname> directory.
+- and all tests in the tests directory.
+
+```shell
+<projectname>/
+├── README.md
+├── pyproject.toml
+├── src
+│   └── testproject
+│       └── __init__.py
+└── tests
+    └── __init__.py
+```
+
