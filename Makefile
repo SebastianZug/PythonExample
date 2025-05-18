@@ -1,5 +1,5 @@
 # Das Makefile ist ein Skript, das die Ausführung von Befehlen automatisiert.
-# An dieser Stelle illustriert es die Referenzierung von Abhänigkeiten
+# An dieser Stelle illustriert es die Referenzierung von Abhängigkeiten
 # Die Umsetzung könnte zum Beispiel durch eine Umsetzung verbessert werden,
 # die die Aktivierung der Python Umgebung automatisiert abprüft. 
 
@@ -7,12 +7,12 @@ all: install run
 
 run: run.py test.txt
 	@echo "Running run.py with test.txt"
-	python3 run.py test.txt > run
+	poetry run python3 run.py test.txt
 
-install: Pipfile
-	@echo "Executing pipenv install"
-	pipenv install
+install: pyproject.toml
+	@echo "Executing poetry install"
+	poetry install --no-root
 
 test:
 	@echo "Executing tests"
-	python -m unittest -v test_example.py
+	poetry run pytest
