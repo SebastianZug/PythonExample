@@ -5,38 +5,35 @@ Added to that, it prints the amount of lines, sentences and words the file inclu
 
 ## Documentation
 
-Python Interpreter: 3.10 or higher  
+Python Interpreter: 3.11 or higher  
 Required Packages:  
 
-- `pip`
-- `pipenv`
+### System
+
+- `pipx`
+- `poetry`
+
+### Python Libraries
+
 - `langdetect`
 
 ## Functionality  
 
 ### Usage
 
-- Windows/Linux:
-    1. install `pipenv`:  
-        - `pip install pipenv`
-        - `pip install --upgrade pipenv`
-        - `pipenv install langdetect`
-    2. create a virtual environment:
-        - `pipenv shell`
+- Windows/Linux/MacOS:
+    1. install `poetry`:  
+        - [poetry install](https://python-poetry.org/docs/#installation)
+        - There are options for using `pipx` or a standalone installer to install poetry.
+        - `pipx install poetry`
+        - `pipx` is the modern way to install and run Python applications in isolated environments.
+    2. install requirements:
+        - `poetry install --no-root`
+        - This command will install the dependencies listed in the `pyproject.toml` file. Without installing the package itself.
     3. run the `run.py`:
-        - `python run.py <filename>`
-        - Example: `python run.py test.txt`
-
-- MacOS:
-    1. install `pipenv`:  
-        - `pip3 install pipenv`
-        - `pip3 install --upgrade pipenv`
-        - `pipenv install langdetect`
-    2. create a virtual environment:
-        - `pipenv shell`
-    3. run the `run.py` script:
-        - `python3 run.py <filename>`
-        - Example: `python3 run.py test.txt`
+        - As poetry is managing the virtual environment, you can run the script using poetry:
+        - `poetry run python3 run.py <filename>`
+        - Example: `poetry run python3 run.py test.txt`
 
 ### Expected result
 
