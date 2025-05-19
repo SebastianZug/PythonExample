@@ -1,3 +1,10 @@
+import sys
+import os.path
+
+# Add the project root directory to sys.path
+# This is a hack, its better to use a proper package structure
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
 import unittest
 from run import read_file, count_lines, count_sentences, count_words
 

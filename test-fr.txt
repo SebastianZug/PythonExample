@@ -1,0 +1,7 @@
+L’organisation des versions dans différentes branches est un élément central du travail avec git. Les branches sont des ramifications du code qui encapsulent certains objectifs de développement.
+
+Le principal inconvénient de travailler avec une seule branche réside dans le fait qu’un master (ou branche principale) défectueux interrompt le travail de tous les collaborateurs. Les branches créent un espace propre (temporaire) pour le développement de nouvelles fonctionnalités, sans compromettre la stabilité du système global. En même temps, les développeurs disposent de l’historique complet d’un projet de manière structurée.
+
+À quoi cela pourrait-il ressembler, par exemple, pour nos supports de cours ?
+
+Eh bien, imaginez une symphonie pédagogique où chaque idée peut s’accorder dans sa propre partition — sans que le maestro perde la tête parce que la flûte a décidé de coder en do majeur alors que tout le monde joue en la mineur. Voilà l’intérêt des branches : la sérénité dans la cacophonie créative.

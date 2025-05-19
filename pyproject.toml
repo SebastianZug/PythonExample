@@ -1,0 +1,22 @@
+[project]
+name = "vl-softwareentwicklung_python_example"
+version = "0.1.1"
+description = "Beispielprojekt für die Vorlesung Softwareentwicklung"
+authors = [
+    {name = "Sebastian Zug",email = "sebastian.zug@informatik.tu-freiberg.de"},
+    {name = "Volker Goehler",email = "volker.goehler@informatik.tu-freiberg.de"},
+]
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "langdetect (>=1.0.9,<2.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.5"
+
